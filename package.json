@@ -1,5 +1,5 @@
 {
-  "name": "tesseract.js",
+  "name": "ocr",
   "version": "4.0.3",
   "description": "Pure Javascript Multilingual OCR",
   "main": "src/index.js",
@@ -23,8 +23,7 @@
     "test:browser:scheduler": "npm run test:browser-tpl -- -f ./tests/scheduler.test.html",
     "test:browser:FS": "npm run test:browser-tpl -- -f ./tests/FS.test.html",
     "lint": "eslint src",
-    "lint:fix": "eslint --fix src",
-    "postinstall": "opencollective-postinstall || true"
+    "lint:fix": "eslint --fix src"
   },
   "browser": {
     "./src/worker/node/index.js": "./src/worker/browser/index.js"
@@ -35,55 +34,49 @@
   ],
   "license": "Apache-2.0",
   "devDependencies": {
-    "@babel/core": "^7.18.7",
-    "@babel/preset-env": "^7.18.7",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
     "@rollup/plugin-commonjs": "^22.0.2",
-    "acorn": "^6.4.0",
-    "babel-loader": "^8.2.0",
+    "acorn": "^6.4.2",
+    "babel-loader": "^8.3.0",
     "buffer": "^6.0.3",
     "cors": "^2.8.5",
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5",
     "expect.js": "^0.3.1",
-    "express": "^4.17.1",
-    "mocha": "^10.0.0",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
     "mocha-headless-chrome": "^4.0.0",
     "npm-run-all": "^4.1.5",
     "nyc": "^15.1.0",
     "rimraf": "^2.7.1",
-    "rollup": "^2.79.0",
+    "rollup": "^2.79.1",
     "wait-on": "^3.3.0",
-    "webpack": "^5.74.0",
-    "webpack-bundle-analyzer": "^4.6.0",
+    "webpack": "^5.77.0",
+    "webpack-bundle-analyzer": "^4.8.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-middleware": "^5.3.3"
   },
   "dependencies": {
-    "babel-eslint": "^10.1.0",
     "bmp-js": "^0.1.0",
-    "file-type": "^12.4.1",
+    "file-type": "^12.4.2",
     "idb-keyval": "^3.2.0",
-    "is-electron": "^2.2.0",
+    "is-electron": "^2.2.2",
     "is-url": "^1.2.4",
-    "node-fetch": "^2.6.0",
-    "opencollective-postinstall": "^2.0.2",
-    "regenerator-runtime": "^0.13.3",
+    "node-fetch": "^2.6.9",
+    "regenerator-runtime": "^0.13.11",
     "resolve-url": "^0.2.1",
     "tesseract.js-core": "^4.0.3",
-    "wasm-feature-detect": "^1.2.11",
+    "wasm-feature-detect": "^1.5.1",
     "zlibjs": "^0.3.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/naptha/tesseract.js.git"
+    "url": "https://github.com/angeltechlogistics/ocr.git"
   },
   "bugs": {
-    "url": "https://github.com/naptha/tesseract.js/issues"
+    "url": "https://github.com/angeltechlogistics/ocr/issues"
   },
-  "homepage": "https://github.com/naptha/tesseract.js",
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/tesseractjs"
-  }
+  "homepage": "https://github.com/angeltechlogistics/ocr"
 }
